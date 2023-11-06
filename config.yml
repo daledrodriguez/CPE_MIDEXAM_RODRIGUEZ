@@ -54,8 +54,18 @@
       name: mariadb
       state: restarted
       enabled: true
+      
+- hosts: influx_ubuntu
+  become: true
+  roles:
+    - influx_ubuntu
 
-- hosts: nagios_ubuntu
+- hosts: influx_centos
+  become: true
+  roles:
+    - influx_ubuntu
+    
+- hosts: nagios_centos
   become: true
   roles:
     - nagios_ubuntu
