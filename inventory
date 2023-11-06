@@ -15,3 +15,9 @@
 
 [prometheus_centos]
 192.168.56.105
+
+[influx_ubuntu]
+192.168.56.103
+
+[influx_centos]
+192.168.56.105
