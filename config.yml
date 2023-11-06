@@ -12,7 +12,7 @@
 - hosts: influx_centos
   become: true
   roles:
-    - influx_ubuntu
+    - influx_centos
     
 - hosts: nagios_centos
   become: true
