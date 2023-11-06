@@ -1,9 +1,4 @@
 
-    - name: Update yum package cache
-      yum:
-        name: "*"
-        state: latest
-
     - name: Install InfluxDB
       yum:
         name: influxdb
